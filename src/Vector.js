@@ -309,7 +309,7 @@ Vector.prototype = {
   limit: function(max) {
     if (this.magnitude() > max) {
 		  this.normalize();
-		  this.mult(max)
+		  this.mulS(max);
 	  }
   },
 
