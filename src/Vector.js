@@ -306,6 +306,13 @@ Vector.prototype = {
     return this;
   },
 
+  limit: function(max) {
+    if (this.magnitude() > max) {
+		  this.normalize();
+		  this.mult(max)
+	  }
+  },
+
 
   /**
    * Zeroes the vector
